@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Greetings</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="weather.css" /><body>
+   
+    <form action="/project3/time.html" method="get" id="result">
+      <p id="result"></p>
+        <button type="submit"  move class="ghost" onclick="redirect()"  formaction="/project 2/project2.html" >Time</button></form>
+
+        
+        <!-- now for timer -->
+        
+        <script>
+           function redirect () {
+              var interval = setInterval(myURL, 5000);
+              var result = document.getElementById("result");
+              result.innerHTML = ("<h1 > HAVE_A_GREAT_DAY</h1>");
+           }
+       function myURL() {
+         window.location.href = './time.html';
+         clearInterval(interval);
+      }
+    </script>
+    
+  <body>
+    <div class="container">DEMO TEXT</div>
+    <!-- Script -->
+    <script src="weather.js"></script></p>
+  </body>
+</html>

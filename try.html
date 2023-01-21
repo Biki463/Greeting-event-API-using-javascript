@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to my website!</h1>
+    <p>The background image will change every hour.</p>
+  </body>
+  <script>
+    setInterval(function() {
+      var currentHour = new Date().getHours();
+      var body = document.getElementsByTagName("BODY")[0];
+
+      if (currentHour >= 0 && currentHour < 6) {
+        body.style.backgroundImage = "url('https://i.pinimg.com/originals/68/ba/a0/68baa06f625af81d0203824a73fc2ba7.jpg')";
+      } else if (currentHour >= 6 && currentHour < 12) {
+        body.style.backgroundImage = "url('https://images.unsplash.com/photo-1531604174015-922f09a0e8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZXZlbmluZ3xlbnwwfHwwfHw%3D&w=1000&q=80')";
+      } else if (currentHour >= 12 && currentHour < 18) {
+        body.style.backgroundImage = "url('https://i0.wp.com/quoteshindi.net/wp-content/uploads/good-evening.jpg?fit=700%2C750&ssl=1')";
+      } else if (currentHour >= 18 && currentHour < 24) {
+        body.style.backgroundImage = "url('https://funkylife.in/wp-content/uploads/2022/08/good-evening-image-from-funkylife-26.jpg')";
+      }
+    }, 3600000); // Change image every hour (3600000 milliseconds)
+  </script>
+</html>

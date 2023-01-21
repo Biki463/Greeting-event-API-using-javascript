@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="time.html">
+    </a>
+    <title>Document</title>
+</head>
+<body>
+ </html>
+<form action="/project3/time.html" method="get" id="result" >
+<p id="result"></p>
+        <button type="redirect()" onclick="redirect()" formaction = "/project 2/project2.html">time</button></form>
+
+        <!-- now for timer -->
+
+        <script>
+            function redirect() {
+                var interval = setInterval(myURL, 5000);
+                 var result = document.getElementById("result");
+                 result.innerHTML = "wait";
+                 }
+
+
+
+            function myURL() {
+                document.location.href = "http://10.10.58.104:5500/project3/time.html";
+                clearInterval(interval);
+            }
+        </script></body>
+        

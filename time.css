@@ -1,0 +1,31 @@
+* {
+    background: rgb(196, 40, 40);
+    background-image: url(https://images.unsplash.com/photo-1667710721991-22c117d3ed86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+      
+}
+
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #1ea33a;
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+}
+.ghost{
+    position: absolute;
+   top: 65%;
+   left: 42%;
+   transform: translate(-50,-50);
+    border-radius: 100px;
+    width: 200px;
+    height: 50px;
+    font-size: 40px;
+     color: rgb(78, 30, 210);
+}
